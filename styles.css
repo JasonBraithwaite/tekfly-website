@@ -1,0 +1,165 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Retro-style font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff; /* White background for the body */
+    color: #8FBC8F; /* New shade of green text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 60%; /* Same width as the screen */
+    max-width: 800px;
+    display: block;
+    margin: 20px auto; /* Space above and below the logo */
+}
+
+.container {
+    width: 60%; /* Reverted to original width */
+    max-width: 800px; /* Adjusted max-width */
+    background-color: #0d0d0d; /* Softer black background */
+    border: 3px solid #CAF082; /* Thinner Tekfly logo green border */
+    border-radius: 15px;
+    padding: 20px; /* Adjust padding for better spacing */
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex: 1;
+    margin-top: 20px; /* Add space at the top of the container */
+    box-shadow: 0 0 8px #CAF082; /* Slightly reduced Tekfly logo green shadow */
+    position: relative; /* Ensure positioning for pseudo-elements */
+}
+
+.header::before, .header::after {
+    content: '====================';
+    color: #8FBC8F; /* New shade of green text */
+    display: block;
+    text-align: center;
+    font-size: 1.2em; /* Adjust size for pseudo-elements */
+}
+
+.header::before {
+    content: '====================';
+    margin-bottom: 20px;
+}
+
+.header::after {
+    content: '====================';
+    margin-top: 20px;
+}
+
+header {
+    color: #CAF082; /* Tekfly logo green */
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em 0;
+}
+
+section {
+    margin-bottom: 3em; /* Increase space between sections */
+    text-align: left;
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+footer {
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; /* Increase space between container and footer */
+}
+
+footer p {
+    color: #000000; /* Black text for the footer */
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em; /* Increase spacing below headings */
+    color: #CAF082; /* Tekfly logo green */
+    font-size: 2em; /* Increase heading font size */
+    text-shadow: 0 0 10px #CAF082; /* Add retro-style text shadow */
+}
+
+p {
+    margin: 1.5em 0; /* Increase spacing between paragraphs */
+    color: #8FBC8F; /* New shade of green text */
+    font-size: 1.2em; /* Adjust paragraph font size */
+}
+
+strong {
+    color: #CAF082; /* Tekfly logo green */
+}
+
+ul {
+    text-align: left;
+    margin: 1.5em 0;
+    padding-left: 20px;
+    color: #8FBC8F; /* New shade of green text */
+    font-size: 1.2em; /* Adjust list font size */
+}
+
+li {
+    margin-bottom: 1em; /* Increase space between list items */
+    color: #8FBC8F; /* New shade of green text */
+}
+
+.ascii-art {
+    text-align: center;
+    margin: 20px 0;
+    color: #8FBC8F; /* New shade of green text */
+    font-size: 1em; /* Adjust ASCII art font size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    .ascii-art {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 90%;
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+    }
+
+    .ascii-art {
+        font-size: 0.7em;
+    }
+}
